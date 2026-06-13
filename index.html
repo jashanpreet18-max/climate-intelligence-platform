@@ -130,10 +130,13 @@
             </div>
             
             <div class="p-6">
-                <form id="search-form" class="relative group">
-                    <input type="text" id="search-input" placeholder="Search global telemetry..." class="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500/30 focus:bg-white/10 kinetic-transition">
-                    <button type="submit" class="absolute left-1 top-1/2 transform -translate-y-1/2 p-3 text-slate-500 group-focus-within:text-blue-500 hover:text-white kinetic-transition cursor-pointer">
+                <form id="search-form" class="relative group flex items-center">
+                    <input type="text" id="search-input" placeholder="Search global telemetry..." class="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-20 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500/30 focus:bg-white/10 kinetic-transition">
+                    <div class="absolute left-1 top-1/2 transform -translate-y-1/2 p-3 text-slate-500 group-focus-within:text-blue-500 kinetic-transition pointer-events-none">
                         <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button type="submit" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-400 text-white text-[10px] font-bold tracking-wider px-3 py-1.5 rounded-lg kinetic-transition shadow-lg shadow-blue-500/20 cursor-pointer">
+                        ENTER
                     </button>
                 </form>
                 <button id="loc-btn" class="w-full mt-4 bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 text-blue-400 py-3 rounded-xl text-sm font-semibold kinetic-transition flex items-center justify-center gap-2 tracking-wide">
